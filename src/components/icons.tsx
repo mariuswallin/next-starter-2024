@@ -106,7 +106,6 @@ export const Icons = {
   arrowRight: ArrowRight,
   help: HelpCircle,
   pizza: Pizza,
-  twitter: Twitter,
   check: Check,
   copy: Copy,
   copyDone: ClipboardCheck,

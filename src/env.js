@@ -8,7 +8,6 @@ export const env = createEnv({
     APP_URL: z.string().url(),
     NODE_ENV: z.enum(["development", "test", "production"]),
   },
-  skipValidation: process.env.SKIP_ENV_VALIDATION,
   client: {},
   experimental__runtimeEnv: {},
 })

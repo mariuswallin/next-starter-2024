@@ -23,8 +23,11 @@ export default {
   settings: {
     "import/resolver": {
       typescript: {
-        project,
+        project: `${import.meta.dirname}/tsconfig.json`,
       },
+    },
+    tailwindcss: {
+      callees: ["classnames", "clsx", "ctl", "cn", "cva"],
     },
   },
   ignorePatterns: [
@@ -84,8 +87,4 @@ export default {
     ],
   },
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
-  tailwindcss: {
-    callees: ["cn", "cva"],
-    config: "tailwind.config.ts",
-  },
 }
